@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="screen">
+                <div id="query" ></div>
+                <div id="solution"></div>
+            </div>
+            <div class="keys">
+                <div class="numbers">
+                    <div class="row">
+                        <div class="num" onclick="getValue(1)">1</div>
+                        <div class="num" onclick="getValue(2)">2</div>
+                        <div class="num" onclick="getValue(3)">3</div>
+                    </div>
+                    <div class="row">
+                        <div class="num" onclick="getValue(4)">4</div>
+                        <div class="num" onclick="getValue(5)">5</div>
+                        <div class="num" onclick="getValue(6)">6</div>
+                    </div>
+                    <div class="row">
+                        <div class="num" onclick="getValue(7)">7</div>
+                        <div class="num" onclick="getValue(8)">8</div>
+                        <div class="num" onclick="getValue(9)">9</div>
+                    </div>
+                    <div class="row">
+                        <div class="num" onclick="clearScreen()">AC</div>
+                        <div class="num" onclick="getValue(0)">0</div>
+                        <div class="num" onclick="getValue('.')">.</div>
+                    </div>
+                </div>
+                <div class="operators">
+                    <div class="operator" onclick="getValue('+')">+</div>
+                    <div class="operator" onclick="getValue('-')">-</div>
+                    <div class="operator" onclick="getValue('*')">*</div>
+                    <div class="operator" onclick="getValue('/')">/</div>
+                    <div class="operator" onclick="getResult()">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="snackbar">Incorrect expression</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
